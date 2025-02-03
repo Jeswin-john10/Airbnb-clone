@@ -7,7 +7,7 @@ import Footer from './Components/Footer'
 import Itemheader from './Components/Itemheader'
 import Homepage from './pages/Homepage'
 import { Search } from './Components/Search'
-
+import Map from './Components/Map'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -17,6 +17,9 @@ function App() {
     <Search/>
    <Itemheader/>
    <Homepage/>
+   <Routes>
+  <Route path='/Map' element={<Map/>}/>
+</Routes>
    <Footer/>
     </>
   )
